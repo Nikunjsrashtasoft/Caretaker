@@ -1,0 +1,129 @@
+.TimingTable {
+  border: 1px solid #d3d3d3;
+  width: 91% !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.TimingTable th,
+.TimingTable td {
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+.TimingTable th {
+  font-size: 19px;
+}
+.ManageTimingDiv {
+  padding-top: 90px;
+}
+.AddCircleIcon {
+  float: inline-end;
+  margin-top: -11px;
+  margin-right: -8px;
+  cursor: pointer;
+}
+.TimingBoxDiv {
+  height: 154px;
+  overflow: auto;
+  margin-top: 23px;
+}
+.ManageTimingTitle {
+  color: black;
+  text-align: left;
+  width: 91%;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.CheckboxDayShift {
+  color: green !important;
+  
+}
+.ShowTimingPopup {
+  height: auto;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 26px #888888 !important;
+  border-radius: 6px !important;
+  padding: 30px 28px 30px 28px;
+  z-index: 1000;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+.ShiftTitle {
+  padding-top: 30px;
+}
+.CheckboxDay {
+  padding-top: 20px;
+}
+.ShiftLabel {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.ShiftTitleName {
+  margin-top: 13px;
+}
+.ShiftAddButton {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.AddBtn {
+  width: 50%;
+  padding: 15px;
+  background-color: #335bff;
+  border-radius: 4px;
+  border: 1px solid #335bff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+.CancelBtn {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #335bff;
+
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+.TimingBox{
+  background: #e2ffec;
+  padding: 11px 5px;
+  border-radius: 4px;
+  border: 1px solid #c5e7d0;
+  margin-bottom: 6px;
+}
+.CloseIcon {
+  color: #a7cdb3;
+  font-size: 18px !important;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  
+}
+
