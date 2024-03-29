@@ -75,6 +75,7 @@ const TableCalendar = () => {
   };
 
   const handleCancel = () => {
+    resetShiftState()
     setShowTimingPopup(false);
     setcaretakerId("");
   };
@@ -112,17 +113,20 @@ const TableCalendar = () => {
         dayjs(time, "HH:mm").add(15, "minute").isAfter(dayjs(endTime, "HH:mm"))
       ) {
         notify("Shift duration must be more than 15 minutes.");
+        return false
       }
       if (
         endTime &&
         dayjs(time, "HH:mm").isSameOrBefore(dayjs(startTime, "HH:mm"))
       ) {
         notify("End time must be grater than start time.");
+        return false
       }
     } else if (name === "endTime") {
       // Ensure endTime is later than startTime
       if (dayjs(time, "HH:mm").isSameOrBefore(dayjs(startTime, "HH:mm"))) {
         notify("End time must be grater than start time.");
+        return false
       }
       if (
         time &&
@@ -131,6 +135,7 @@ const TableCalendar = () => {
           .isAfter(dayjs(time, "HH:mm"))
       ) {
         notify("Shift duration must be more than 15 minutes.");
+        return false
       }
     }
 
@@ -410,12 +415,11 @@ const TableCalendar = () => {
                 <div className={styles.ShiftAddButton}>
                   <button
                     id={item.caretaker.id}
-                    // id={index}
                     className={styles.AddBtn}
-                    // onClick={AddShift}
+                    
                     onClick={() => AddShift()}
                   >
-                    Add{item.caretaker.id}
+                    Add
                     {console.log("item.caretaker.id", item.caretaker.id)}
                   </button>
                   <button

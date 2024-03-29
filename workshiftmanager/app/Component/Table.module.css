@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 .TimingBoxDiv {
-  height: 154px;
+  height: auto;
   overflow: auto;
   margin-top: 23px;
 }
